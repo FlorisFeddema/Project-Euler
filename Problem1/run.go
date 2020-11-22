@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
+	defer timeTrack(time.Now())
+
 	sum := 0
 
 	for i := 0; i < 1000; i++ {
@@ -15,3 +18,9 @@ func main() {
 	
 	fmt.Printf("Result: %[1]d", sum)
 }
+
+func timeTrack(start time.Time) {
+	elapsed := time.Since(start)
+	fmt.Printf("Runtime: %s", elapsed)
+}
+
