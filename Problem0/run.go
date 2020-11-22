@@ -7,6 +7,11 @@ import (
 
 func main() {
 	defer timeTrack(time.Now())
+
+	//TODO: MAKE CODE
+
+	result := 0
+	fmt.Printf("Result: %[1]d\n", result)
 }
 
 func timeTrack(start time.Time) {
