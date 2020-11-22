@@ -7,6 +7,18 @@ import (
 
 func main() {
 	defer timeTrack(time.Now())
+
+	max := 600851475143
+
+	current := 1
+
+	for current < max {
+		if max % current == 0 {
+			max = max / current
+		}
+		current++
+	}
+	println(max)
 }
 
 func timeTrack(start time.Time) {

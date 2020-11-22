@@ -21,6 +21,5 @@ func main() {
 
 func timeTrack(start time.Time) {
 	elapsed := time.Since(start)
-	fmt.Printf("Runtime: %s", elapsed)
+	fmt.Printf("Runtime: %s\n", elapsed)
 }
-
