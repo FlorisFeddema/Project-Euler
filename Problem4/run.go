@@ -21,7 +21,7 @@ func main() {
 	for x > 0 || y > 0 {
 		if x == 0  {
 			y--
-			x = max
+			x = y
 		} else {
 			x--
 		}
@@ -39,7 +39,6 @@ func main() {
 	}
 
 	fmt.Printf("Result : %[1]d\n", result)
-
 }
 
 func timeTrack(start time.Time) {
