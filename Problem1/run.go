@@ -16,7 +16,7 @@ func main() {
 		}		
 	}
 	
-	fmt.Printf("Result: %[1]d", sum)
+	fmt.Printf("Result: %[1]d\n", sum)
 }
 
 func timeTrack(start time.Time) {

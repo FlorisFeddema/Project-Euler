@@ -18,7 +18,7 @@ func main() {
 		}
 		current++
 	}
-	println(max)
+	fmt.Printf("Result: %[1]d\n", max)
 }
 
 func timeTrack(start time.Time) {
